@@ -33,7 +33,7 @@ startRecordButton.addEventListener('click', async () => {
     };
 
     mediaRecorder.onstop = async () => {
-        const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+        const audioBlob = new Blob(audioChunks, { type: 'audio/mp3' });
         const audioUrl = URL.createObjectURL(audioBlob);
 
         // Update the audio element to play the recorded audio
